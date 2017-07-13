@@ -1,8 +1,30 @@
-﻿var CommentBox = React.createClass({
+﻿var CommentList = React.createClass({
+    render: function() {
+        return (
+            <div className="commentList">
+                Comment List!
+            </div>
+        );
+    }
+});
+
+var CommentForm = React.createClass({
+    render: function() {
+        return (
+            <div className="commentForm">
+                Comment Form!
+            </div>
+        );
+    }
+});
+
+var CommentBox = React.createClass({
     render: function() {
         return (
             <div className="commentBox">
-                Hello World, I am Confusing!
+                <h1>Comments</h1>
+                <CommentList />
+                <CommentForm />
             </div>
         );
     }
