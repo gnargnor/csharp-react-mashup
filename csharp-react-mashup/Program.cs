@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace csharp_react_mashup
+namespace CsharpReactMashup
 {
     public class Program
     {

@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using JavaScriptEngineSwitcher.Core;
 using JavaScriptEngineSwitcher.ChakraCore; 
 
-namespace csharp_react_mashup
+namespace CsharpReactMashup
 {
     public class Startup
     {
