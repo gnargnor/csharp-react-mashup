@@ -26,6 +26,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\HomeFolder\" />
-    <Folder Include="Scripts\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
 </Project>
