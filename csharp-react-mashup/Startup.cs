@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using JavaScriptEngineSwitcher.Core;
+using JavaScriptEngineSwitcher.ChakraCore; 
 
 namespace csharp_react_mashup
 {
@@ -51,9 +53,16 @@ namespace csharp_react_mashup
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            var engineSwitcher = JsEngineSwitcher.Instance;
+
+            engineSwitcher.EngineFactories
+                          .AddChakraCore();
+
             app.UseReact(config => 
             {
-                
+                config
+                    .AddScript("~/js/remarkable.min.js")
+                    .AddScript("~/js/csharp_react.jsx");
             });
 
             app.UseStaticFiles();

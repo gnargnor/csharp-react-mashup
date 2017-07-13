@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     Layout = null;
 }
 <html>
@@ -10,6 +10,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
-		<script src="@Url.Content("~/wwwroot/js/csharp_react.jsx")"></script>
+		<script src="@Url.Content("~/js/csharp_react.jsx")"></script>
+		@Html.ReactInitJavaScript()
 </body>
 </html>
