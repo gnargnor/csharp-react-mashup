@@ -27,7 +27,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Views\HomeFolder\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Models\" />
   </ItemGroup>
