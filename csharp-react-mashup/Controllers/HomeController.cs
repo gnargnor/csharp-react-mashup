@@ -47,6 +47,15 @@ namespace CsharpReactMashup.Controllers
             return Json(_comments); 
         }
 
+        [Route("comments/new")]
+        [HttpPost]
+        public ActionResult AddComment(CommentModel comment)
+        {
+            comment.Id = _comments.Count + 1;
+            _comments.Add(comment);
+            return Content("GREAT JOB!");
+        }
+
 
 	    // GET: /<controller>/
 	    public IActionResult Index()
