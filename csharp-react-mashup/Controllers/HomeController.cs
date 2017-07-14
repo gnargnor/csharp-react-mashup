@@ -38,13 +38,15 @@ namespace CsharpReactMashup.Controllers
                 },
             };
         }
-
+        //Route keyword indicates this action will be taken when the route /comments is hit
         [Route("comments")]
+        //This disables browser caching
         [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public ActionResult Comments()
         {
             return Json(_comments); 
         }
+
 
 	    // GET: /<controller>/
 	    public IActionResult Index()
